@@ -62,4 +62,18 @@ Verify and flash the code on your Photon. Code output is shown in logs at dashbo
 
 https://dashboard.particle.io/user/logs
 
+
+##C
+
+Download (or git pull) the code in Beaglebone Black.
+
+Compile the c program.
+```cpp
+$>gcc ADC081C.c -o ADC081C
+```
+Run the c program.
+```cpp
+$>./ADC081C
+```
+
 #####The code output is digital value of an analog input.
