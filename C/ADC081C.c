@@ -20,7 +20,7 @@ void main()
 		printf("Failed to open the bus. \n");
 		exit(1);
 	}
-	// Get I2C device, AD5259 I2C address is 0x50(80)
+	// Get I2C device, ADC081C I2C address is 0x50(80)
 	ioctl(file, I2C_SLAVE, 0x50);
 
 	// Select configuration register(0x02)
