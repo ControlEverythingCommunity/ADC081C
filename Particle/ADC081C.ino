@@ -59,6 +59,6 @@ void loop()
     
     // Output data to dashboard
     Particle.publish("Raw value of the source : ", String(raw_adc));
-    delay(500);
+    delay(1000);
 }
 
