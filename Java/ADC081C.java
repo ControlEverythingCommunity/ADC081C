@@ -26,7 +26,7 @@ public class ADC081C
 		// Read 2 bytes of data
 		// raw_adc msb, raw_adc lsb
 		byte[] data = new byte[2];
-		device.read(data, 0, 2);
+		device.read(0x00, data, 0, 2);
 
 		// Convert the data to 8-bits
 		int raw_adc = (((data[0] & 0x0F) * 256) + (data[1] & 0xF0)) / 16;
