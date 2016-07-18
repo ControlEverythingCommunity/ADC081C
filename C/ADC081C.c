@@ -38,7 +38,7 @@ void main()
 	char data[2] = {0};
 	if(read(file, data, 2) != 2)
 	{
-		printf("Erorr : Input/output Erorr \n");
+		printf("Error : Input/Output Error \n");
 	}
 	else
 	{
@@ -46,6 +46,6 @@ void main()
 		int raw_adc = (((data[0] & 0x0F) * 256) + (data[1] & 0xF0)) / 16;
 
 		// Output data to screen
-		printf("Raw value of the source : %d \n", raw_adc);
+		printf("Digital Value of Analog Input : %d \n", raw_adc);
 	}
 }
