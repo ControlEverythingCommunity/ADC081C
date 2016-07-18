@@ -53,7 +53,7 @@ void loop()
   int raw_adc = (((data[0] & 0x0F) * 256) + (data[1] & 0xF0)) / 16;
 	
   // Output data to serial monitor
-  Serial.print("Raw value of the source : ");
+  Serial.print("Digital Value of Analog Input : ");
   Serial.println(raw_adc);     
   delay(500);
 }
