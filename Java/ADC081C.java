@@ -32,6 +32,6 @@ public class ADC081C
 		int raw_adc = (((data[0] & 0x0F) * 256) + (data[1] & 0xF0)) / 16;
 
 		// Output data to screen
-		System.out.printf("Raw value of the source : %d %n", raw_adc);
+		System.out.printf("Digital value of Analog Input : %d %n", raw_adc);
 	}
 }
